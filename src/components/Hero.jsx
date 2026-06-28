@@ -68,17 +68,17 @@ const Hero = () => {
       <motion.div
         animate={{ x: [0, 40, 0], y: [0, -30, 0] }}
         transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute top-20 left-10 w-72 h-72 bg-accent/20 rounded-full blur-3xl"
+        className="absolute top-20 left-10 w-72 h-72 bg-accent/20 rounded-full blur-3xl hidden lg:block"
       />
       <motion.div
         animate={{ x: [0, -30, 0], y: [0, 40, 0] }}
         transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute bottom-20 right-10 w-96 h-96 bg-highlight/20 rounded-full blur-3xl"
+        className="absolute bottom-20 right-10 w-96 h-96 bg-highlight/20 rounded-full blur-3xl hidden lg:block"
       />
       <motion.div
         animate={{ x: [0, -50, 0], y: [0, -50, 0] }}
         transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute top-1/2 left-1/3 w-48 h-48 bg-purple-300/20 rounded-full blur-3xl"
+        className="absolute top-1/2 left-1/3 w-48 h-48 bg-purple-300/20 rounded-full blur-3xl hidden lg:block"
       />
 
       {/* Decorative Grid Lines */}
@@ -92,8 +92,8 @@ const Hero = () => {
         />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-32">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-32">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="text-left space-y-8">
             {/* Badge */}
@@ -114,7 +114,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: 'easeOut' }}
             >
-              <h1 className="text-6xl lg:text-7xl font-bold text-primary leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-primary leading-tight">
                 <span className="inline-block overflow-hidden">
                   <motion.span
                     initial={{ y: '100%' }}
@@ -151,7 +151,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
-              className="text-xl text-gray-600 leading-relaxed max-w-xl"
+              className="text-base sm:text-xl text-gray-600 leading-relaxed max-w-xl"
             >
               Transform your legal workflow with enterprise-grade AI. Research faster, draft smarter, and deliver exceptional results with confidence.
             </motion.p>
@@ -197,7 +197,7 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.45, ease: 'easeOut' }}
-              className="grid grid-cols-3 gap-8 pt-8"
+              className="grid grid-cols-3 gap-4 sm:gap-8 pt-8"
             >
               {[
                 { value: '10M+', label: 'Documents Analyzed' },
@@ -210,7 +210,7 @@ const Hero = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 + i * 0.15, duration: 0.5 }}
                 >
-                  <div className="text-4xl font-bold text-primary">{stat.value}</div>
+                  <div className="text-2xl sm:text-4xl font-bold text-primary">{stat.value}</div>
                   <div className="text-sm text-gray-600 mt-1">{stat.label}</div>
                 </motion.div>
               ))}
@@ -228,7 +228,7 @@ const Hero = () => {
             <motion.div
               animate={{ y: [0, -12, 0], rotate: [0, -2, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute -top-4 -right-4 z-20 bg-white rounded-xl shadow-premium px-4 py-3 border border-gray-100"
+              className="absolute -top-4 -right-4 z-20 bg-white rounded-xl shadow-premium px-4 py-3 border border-gray-100 hidden lg:block"
             >
               <div className="flex items-center space-x-2">
                 <span className="relative flex h-2.5 w-2.5">
@@ -242,7 +242,7 @@ const Hero = () => {
             <motion.div
               animate={{ y: [0, 12, 0], rotate: [0, 2, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-              className="absolute -bottom-4 -left-4 z-20 bg-white rounded-xl shadow-premium px-4 py-3 border border-gray-100"
+              className="absolute -bottom-4 -left-4 z-20 bg-white rounded-xl shadow-premium px-4 py-3 border border-gray-100 hidden lg:block"
             >
               <div className="text-xs text-gray-600">Response Time</div>
               <div className="text-2xl font-bold text-accent">0.8s</div>
@@ -260,7 +260,7 @@ const Hero = () => {
               {/* Dashboard Card */}
               <motion.div
                 whileHover={{ y: -4 }}
-                className="relative bg-white rounded-2xl shadow-premium p-8 border border-gray-100"
+                className="relative bg-white rounded-2xl shadow-premium p-4 sm:p-6 lg:p-8 border border-gray-100"
               >
                 {/* Window Controls */}
                 <div className="flex items-center justify-between mb-6">
@@ -331,7 +331,7 @@ const Hero = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 1.6, duration: 0.5 }}
-                  className="grid grid-cols-2 gap-4 mt-6"
+                  className="grid grid-cols-2 gap-3 sm:gap-4 mt-4 sm:mt-6"
                 >
                   <motion.div
                     whileHover={{ scale: 1.02 }}
@@ -364,7 +364,7 @@ const Hero = () => {
                 </motion.div>
 
                 {/* Progress Bar */}
-                <div className="mt-6 space-y-2">
+                <div className="mt-4 sm:mt-6 space-y-2">
                   <div className="flex justify-between text-xs text-gray-600">
                     <span>Analysis Progress</span>
                     <span>87%</span>

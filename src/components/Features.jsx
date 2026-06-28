@@ -94,7 +94,7 @@ const Features = () => {
   };
 
   return (
-    <section className="py-32 bg-white relative overflow-hidden">
+    <section className="py4- bg-white relative overflow-hidden">
       {/* Floating Background Shapes */}
       <motion.div
         animate={{ rotate: 360 }}
