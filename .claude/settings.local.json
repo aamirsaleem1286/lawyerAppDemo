@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npx tailwindcss init -p)",
+      "PowerShell(npm install *)"
+    ]
+  }
+}
